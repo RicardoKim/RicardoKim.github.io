@@ -1,0 +1,106 @@
+lang: ko-KR
+timezone: Asia/Seoul
+
+title: "Ricardo Kim의 기술 블로그"
+tagline: "개발, 아키텍처, 그리고 배움의 기록"
+description: >-
+  소프트웨어 개발, 시스템 아키텍처, 그리고 다양한 기술적 탐구를 기록하는 공간입니다.
+
+url: "https://RicardoKim.github.io"
+
+github:
+  username: RicardoKim
+
+social:
+  name: Ricardo Kim
+  email: ""
+  links:
+    - https://github.com/RicardoKim
+
+theme_mode: # [light | dark] - 비워두면 시스템 설정 따름
+
+avatar: ""
+toc: true
+comments:
+  provider: utterances
+  utterances:
+    repo: "RicardoKim/RicardoKim.github.io"
+    issue_term: "pathname"
+    label: "comment"
+    theme: "github-light"
+    crossorigin: "anonymous"
+
+analytics:
+  google:
+    id: "G-XXXXXXXXXX" # GA4 Measurement ID로 교체
+
+paginate: 10
+
+theme: jekyll-theme-chirpy
+
+# Jekyll settings
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+collections:
+  tabs:
+    output: true
+    sort_by: order
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      comments: true
+      toc: true
+      permalink: /posts/:title/
+  - scope:
+      path: _tabs
+      type: tabs
+    values:
+      layout: page
+      permalink: /:title/
+
+sass:
+  style: compressed
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: [development]
+
+exclude:
+  - "*.gem"
+  - "*.gemspec"
+  - docs
+  - tools
+  - README.md
+  - LICENSE
+  - "*.config.js"
+  - package*.json
+
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/
