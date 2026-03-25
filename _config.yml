@@ -1,10 +1,10 @@
 lang: ko-KR
 timezone: Asia/Seoul
 
-title: "Ricardo Kim의 기술 블로그"
-tagline: "개발, 아키텍처, 그리고 배움의 기록"
+title: "Ricardo Kim의 블로그"
+tagline: "기록"
 description: >-
-  소프트웨어 개발, 시스템 아키텍처, 그리고 다양한 기술적 탐구를 기록하는 공간입니다.
+  다양한 기술적 탐구를 기록하는 공간입니다.
 
 url: "https://RicardoKim.github.io"
 
